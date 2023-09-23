@@ -76,7 +76,7 @@ const ConversationPage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="How do I calculate the radis of a circle?"
+                        placeholder="Send a message"
                         {...field}
                       />
                     </FormControl>
@@ -92,7 +92,7 @@ const ConversationPage = () => {
             </form>
           </Form>
         </div>
-        <div className="space-y-4 mt-4 font-bold">
+        <div className="space-y-4 mt-4 font-medium leading-8 text-justify">
           {isLoading && (
             <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
               <Loader />
@@ -113,7 +113,9 @@ const ConversationPage = () => {
                 )}
               >
                 {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
-                <p className="text-sm">{message.content}</p>
+                <p className="text-[0.60rem] sm:text-base md:text-lg">
+                  {message.content}
+                </p>
               </div>
             ))}
           </div>
