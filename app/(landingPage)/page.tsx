@@ -9,8 +9,11 @@ export default function Home() {
       <div className="flex justify-center items-center mb-4">
         <Image src={image} alt="logo" className="h-24 w-24 sm:h-40 sm:w-40" />
       </div>
-      <p className="text-center mb-4 text-xl font-bold">
-        AI-ToolKit Chatgpt (unprotected)
+      <p className="text-center mb-2 text-xl font-bold">
+        Chatgpt AI-toolKit (unprotected)
+      </p>
+      <p className="text-center mb-4 text-lg font-bold">
+        Made by : Ahmad Bilal Faroooqi
       </p>
       <div className="flex justify-center items-center">
         <Link href={"/sign-in"}>
